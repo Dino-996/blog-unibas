@@ -2,8 +2,8 @@ import { Articolo } from './articolo'
 
 export class Blog {
 
-    titolo: string
-    listaArticoli: Array<Articolo>
+    private titolo: string;
+    private listaArticoli: Array<Articolo>;
 
     constructor(titolo: string) {
         this.titolo = titolo;
@@ -21,19 +21,4 @@ export class Blog {
     addArticolo(articolo: Articolo): void {
         this.listaArticoli.push(articolo);
     }
-
-    getArticolo(articolo: Articolo): Articolo {
-        let articoloUguale: Articolo;
-        for (let articoloFiltrato of this.listaArticoli) {
-            try {
-                if (articoloFiltrato.id === articolo.id) {
-                    articoloUguale = articolo;
-                }
-            } catch (error) {
-                console.warn('Errore nel metodo getArticolo: ', error);
-            }
-        }
-        return articoloUguale;
-    }
-
 }

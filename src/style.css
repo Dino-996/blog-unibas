@@ -1,56 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* GOOGLE FONT DA IMPLEMENTARE */
 
-/* Palette */
-:root { 
-    --primary-color: #091057; /* Su testo bianco */
-    --secondary-color: #024CAA; /* Su testo bianco */
-    --ternary-color: #EC8305; /* Su testo nero */
-    --quaternary-color: #DBD3D3; /* Su testo nero */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --primary-color: #091057;
+  --secondary-color: #024caa;
+  --ternary-color: #ec8305;
+  --quaternary-color: #dbd3d3;
 }
 
 body {
-    @apply
-    bg-[--quaternary-color];
+  @apply font-inter
+  bg-[--quaternary-color];
 }
 
 h1 {
-    @apply
-    text-4xl
+  @apply text-4xl
     antialiased
     font-medium
-    tracking-tight
+    tracking-tight;
 }
 
 h2 {
-    @apply
-    text-2xl
+  @apply text-2xl
+  mt-2
     antialiased 
     font-normal
-    tracking-tight
+    tracking-tight;
 }
 
 a {
-    @apply
-    cursor-pointer
+  @apply cursor-pointer
     font-medium
     text-base
-    hover:text-[--ternary-color]
+    hover:text-[--ternary-color];
 }
 
 p {
-    @apply
-    font-normal
-    text-base
+  @apply font-normal
+    mt-2
+    text-base;
+}
+
+/*300x300*/
+img {
+  @apply w-full
+    mr-0
+    mb-4
+    border-2
+    border-[--secondary-color]
+    rounded-xl
+    md:w-auto 
+    md:mr-4 
+    md:mb-0;
+}
+
+section {
+  @apply p-4;
 }
 
 button {
-    @apply
-    flex
+  @apply flex
     items-center
-    justify-center
     text-center
     border-none 
     shadow-sm 
@@ -61,39 +74,37 @@ button {
     pb-2
     ps-4
     pe-4 
+    mr-4
     hover:bg-[--primary-color] 
     font-normal
     text-base
-    tracking-tight 
+    tracking-tight;
 }
 
-div.blog-container {
-    @apply
-    p-10
-    m-8
-    w-auto
-    max-w-prose
-    border-red-600
-    border-solid
-    border-2
+code {
+  @apply
+  bg-[#eee]
+  rounded-lg
+  p-2
 }
 
-div.blog-container-inline {
-    @apply
-    flex
-    flex-wrap
-    justify-evenly
-    items-center
-    border-yellow-600
-    border-solid
-    border-2
+.container-inline {
+  @apply flex
+  flex-wrap
+  items-start
+  justify-evenly
+  p-4
+  md:items-center
+  md:flex-nowrap;
 }
 
-div.button-container {
-    @apply
-    flex
-    justify-end
-    border-blue-600
-    border-solid
-    border-2
+.container-button {
+  @apply flex
+  justify-end;
 }
+
+.article-container {
+  @apply m-4
+}
+
+
