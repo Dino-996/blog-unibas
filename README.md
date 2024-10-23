@@ -1,6 +1,6 @@
 # Blog Unibas
 
-Un progetto sviluppato in TypeScript con Webpack e Tailwind CSS per visualizzare articoli. Questo progetto permette di visualizzare una lista di articoli, selezionare un articolo specifico per visualizzarne i dettagli e tornare alla home.
+Un progetto sviluppato in TypeScript vanilla con Webpack e Tailwind CSS per visualizzare articoli. Questo progetto permette di visualizzare una lista di articoli, selezionare un articolo specifico per visualizzarne i dettagli e tornare alla home.
 
 ## Tecnologie utilizzate
 
