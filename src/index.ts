@@ -45,3 +45,5 @@ const blogContainer = document.querySelector('.blog-container');
 
 // button-container
 const buttonContainer = document.querySelector('.button-container');
+
+console.log(process.env.HELLO)
