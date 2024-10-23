@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* GOOGLE FONT DA IMPLEMENTARE */
+
+/* Palette */
+:root { 
+    --primary-color: #091057; /* Su testo bianco */
+    --secondary-color: #024CAA; /* Su testo bianco */
+    --ternary-color: #EC8305; /* Su testo nero */
+    --quaternary-color: #DBD3D3; /* Su testo nero */
+}
+
+body {
+    @apply
+    bg-[--quaternary-color];
+}
+
+h1 {
+    @apply
+    text-4xl
+    antialiased
+    font-medium
+    tracking-tight
+}
+
+h2 {
+    @apply
+    text-2xl
+    antialiased 
+    font-normal
+    tracking-tight
+}
+
+a {
+    @apply
+    cursor-pointer
+    font-medium
+    text-base
+    hover:text-[--ternary-color]
+}
+
+p {
+    @apply
+    font-normal
+    text-base
+}
+
+button {
+    @apply
+    flex
+    items-center
+    justify-center
+    text-center
+    border-none 
+    shadow-sm 
+    bg-[--secondary-color] 
+    text-white 
+    rounded-xl
+    pt-2
+    pb-2
+    ps-4
+    pe-4 
+    hover:bg-[--primary-color] 
+    font-normal
+    text-base
+    tracking-tight 
+}
+
+div.blog-container {
+    @apply
+    p-10
+    m-8
+    w-auto
+    max-w-prose
+    border-red-600
+    border-solid
+    border-2
+}
+
+div.blog-container-inline {
+    @apply
+    flex
+    flex-wrap
+    justify-evenly
+    items-center
+    border-yellow-600
+    border-solid
+    border-2
+}
+
+div.button-container {
+    @apply
+    flex
+    justify-end
+    border-blue-600
+    border-solid
+    border-2
+}
